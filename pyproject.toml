@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "att-wallet"
+version = "0.1.0"
+description = ""
+authors = ["felipesilvaibi <felipe_ibirama@hotmail.com>"]
+readme = "README.md"
+packages = [{include = "att_wallet"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.0.1"
+ipykernel = "^6.22.0"
+requests = "^2.29.0"
+openpyxl = "^3.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.22.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
