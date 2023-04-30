@@ -12,9 +12,9 @@ Wallet update script, based on the amount contributed in cryptocurrencies at htt
 2. Run `poetry install`
 3. Duplicate the following wallet to your drive: <https://docs.google.com/spreadsheets/d/1xfvUxD_1G1AENeGp2jEhN10qQSd7JnER1-Gr4hddyhA/edit?usp=sharing>
    - Note: change the cryptos in the wallet according to the cryptos you want your wallet to have (cryptos that do not have at least 1 dollar in the OKX will not be updated)
-4. Create an API key for OKX account access (see [How To create a OKX API key?](#How-To-create-a-OKX-API-key?))
+4. Create an API key for OKX account access (see [How To create a OKX API key?](#how-to-create-a-okx-api-key))
    - Note: provide the api access credentials in the .env file
-5. Create Service Account for access to google drive and google sheets (see [How to Create a Google Service Account?](#How-to-Create-a-Google-Service-Account?))
+5. Create Service Account for access to google drive and google sheets (see [How to Create a Google Service Account?](#how-to-create-a-google-service-account))
    - Note: make the json available with the access credentials in the file: data/google_client_secret.json
 6. Run `python3 src/update_google_wallet_sheet.py`
 
