@@ -1,12 +1,12 @@
 # Crypto Wallet Update Automator Script
 Wallet update script, based on the amount contributed in cryptocurrencies at https://www.okx.com/
-## Restrictions:
+## Restrictions
 
 1. Have an OKX account (the script only integrates with OKX for now)
    - Note: you are expected to have all your cryptos allocated on OKX
 2. Have a google account
 
-## Steps:
+## Steps
 
 1. Install Python3 and Poetry
 2. Run `poetry install`
@@ -19,6 +19,7 @@ Wallet update script, based on the amount contributed in cryptocurrencies at htt
 6. Run `python3 src/update_google_wallet_sheet.py`
 
 ### How To create a OKX API key?
+---
 1. Log in to [https://www.okx.com/login](https://www.okx.com/login).
     
     **Note** OKX requires users to either link a mobile number to their account or enable an authenticator app like Google Authenticator before creating a API credentials.
@@ -42,6 +43,7 @@ Wallet update script, based on the amount contributed in cryptocurrencies at htt
 12. Copy the API Key and Secret Key and store in a safe place. You will need both keys, and your unique Passphrase for [Adding a OKX Connection](https://library.tradingtechnologies.com/user-setup/okx-adding-a-okx-connection.html).
 
 ### How to Create a Google Service Account?
+---
 In order to read and update the data from google spreadsheets in python, we will have to create a [Service Account](https://cloud.google.com/iam/docs/service-accounts). It is a special type of account used to make authorized API calls to Google Cloud Services *– Google Cloud Docs*.
 
 First of all, make sure that you have a google account. If you have a Google account, you can follow these steps to create a Google service account.
