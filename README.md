@@ -18,6 +18,13 @@ Wallet update script, based on the amount contributed in cryptocurrencies at htt
    - Note: make the json available with the access credentials in the file: data/google_client_secret.json
 6. Run `python3 src/update_google_wallet_sheet.py`
 
+7. Using Docker? run:
+    ```
+    wsl docker build -t att_crypto_wallet {project_folder}/.
+    wsl docker run --env-file {project_folder}/.env -it att_crypto_wallet
+    wsl docker rm -f $(docker ps -aqf "ancestor=att_crypto_wallet")
+    ```
+
 ### How To create a OKX API key?
 ---
 1. Log in to [https://www.okx.com/login](https://www.okx.com/login).
