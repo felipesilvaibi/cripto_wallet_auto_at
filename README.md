@@ -20,9 +20,9 @@ Wallet update script, based on the amount contributed in cryptocurrencies at htt
 
 7. Using Docker? run:
     ```
-    wsl docker build -t att_crypto_wallet {project_folder}/.
-    wsl docker run --env-file {project_folder}/.env -it att_crypto_wallet
-    wsl docker rm -f $(docker ps -aqf "ancestor=att_crypto_wallet")
+    docker build -t att_crypto_wallet {project_folder}/.
+    docker run --env-file {project_folder}/.env -it att_crypto_wallet
+    docker rm -f $(docker ps -aqf "ancestor=att_crypto_wallet")
     ```
 
 ### How To create a OKX API key?
